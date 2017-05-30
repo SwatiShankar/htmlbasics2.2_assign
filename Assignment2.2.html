@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+	<form action="http://www.example.com/review.php" method="get">	<!--action attribute specifies the file which would process the form data -->
+		<fieldset>		<!--Groups the widgets of the from element -->
+			<legend>Your Details</legend> <!--Gives the heading to the group-->
+			<label for="name">Name :</label>
+			<input type="text" name="uname" id="name" size="30" maxlength="100"><br>	<!--textfield of type text -->
+			<label for="email">Email :</label>
+			<input type="email" name="" id="email" size="30" maxlength="100">			<!--text field which would accept the email since its type is email, input would be validated there itself -->
+		</fieldset>
+
+		<fieldset>
+			<legend>Your Review</legend>
+			<label for="sBox">How did you hear about us ?</label>						<!--Gives the heading to the fields-->
+			<select id="sBox">															<!--Select tag is used to design the drop down menu-->
+				<option value="google">Google</option>
+			</select> <br>
+
+			<p>Would you visit again?</p>
+
+			<input type="radio" name="option" id="YES" value="yes">						<!--represents a radio button since its type is radio -->
+			<label for="YES">Yes</label>
+			<input type="radio" name="option" id="NO" value="no">
+			<label for="NO">No</label>
+			<input type="radio" name="option" id="Maybe" value="maybe">
+			<label for="Maybe">Maybe</label> <br><br>
+
+			<label for="comments">Comments :</label><br>
+			<textarea></textarea><br><br>												<!--Defines the text area-->
+
+			<input type="checkbox" name="signme" checked="true" id="sign">				<!--this is the input field for check box.-->
+			<label for="sign">Sign me up for email updates</label><br>
+
+			<button>Submit review</button>
+		</fieldset>
+	</form>
+</body>
+</html>
